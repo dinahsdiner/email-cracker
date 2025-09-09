@@ -51,13 +51,13 @@ def connect_to_smtp_server():
 try:
     smtpserver = connect_to_smtp_server()
     
-    email_user = os.getenv('EMAIL_USER')
+    @bbarajas5179@gmail.com = os.getenv('EMAIL_USER')
     email_pass = os.getenv('EMAIL_PASS')
     
     smtpserver.login(email_user, email_pass)
     logging.info("Logged in successfully.")
     
-    from_addr = email_user
+    from_addr = "@bbarajas5179@gmail.com"
     to_addr = "recipient_email@gmail.com"
     subject = "Test Email"
     body = "This is a test email."
